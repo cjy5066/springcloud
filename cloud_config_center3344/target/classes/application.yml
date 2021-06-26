@@ -1,0 +1,44 @@
+server:
+  port: 3344
+
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          #uri: git@github.com:cjy5066/springcloud-cofing.git    # 在github上的厂库名字
+          #uri: https://github.com/cjy5066/springcloud-cofing.git    #github
+          uri: https://gitee.com/cjy5066/springcloud.git    # gitee
+          # 搜索目录
+          search-paths:
+            - springcloud
+          # 读取分支
+          default-label: master
+          username: 17396211859
+          password: aa5066cjy
+      # 读取分支
+    #label: main
+
+#rabbitmp的相关配置，15672是web管理界面的入口。5672是Mq的访问的端口
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  instance:
+    hostname: cloud-config-center
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+#rabbitmq 相关配置，暴露bus刷新配置的站点
+management:
+  endpoints:  #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'

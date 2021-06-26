@@ -1,0 +1,2 @@
+这个项目使用Zookeeper，不用euerka了，
+springcloud整合zookeeper

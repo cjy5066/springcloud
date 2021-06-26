@@ -1,0 +1,29 @@
+server:
+  port: 80
+# 名字
+spring:
+  application:
+    name: provider-feign-service
+eureka:
+  client:
+    ###是否将自己注册到注册中心  false 表示不想注册中心注册自己
+    register-with-eureka: true
+    ###是否从euerka中获取注册信息
+    fetch-registry: true
+    # 配置暴露给eureka client的请求路径
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/  #集群版
+      #defaultZone: http://localhost:7001/eureka/  # 单机版
+
+# 设置feign客户端超时时间
+ribbon:
+  #指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间
+  ReadTimeout: 5000
+  #指的是建立连接后从服务读取到可以用资源所用的时间
+  ConnectTimeour: 5000
+
+
+logging:
+  level:
+    #feign 日志以什么级别监控哪个接口
+    com.fegin.server.PaymentFeginServer: debug

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="feign-order80" />
+        <module name="cloud-stream-rabbitmq-provider8801" />
+        <module name="consul_payment8006" />
+        <module name="cloud-stream-rabbitmq-consumer8802" />
+        <module name="cloud-stream-rabbitmq-consumer8803" />
+        <module name="config-client3355" />
+        <module name="cloud-alibaba-provider-payment9002" />
+        <module name="cloud-alibaba-provider-order83" />
+        <module name="gateway-gateway9527" />
+        <module name="hystrix-dashboard9001" />
+        <module name="cloud-alibaba-provider-payment9001" />
+        <module name="cluod-alibaba-order83" />
+        <module name="Eureka_feign_order80" />
+        <module name="cloud_alibaba-config-nacos-client3377" />
+        <module name="provider-payment8001" />
+        <module name="Hystrix-qayment8001" />
+        <module name="provider-payment8002" />
+        <module name="cloudalibabaconfignacosclient3377" />
+        <module name="provider-payment8004" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-alibaba-config-nacos-client3377" />
+        <module name="Eureka-Server7002" />
+        <module name="Eureka-Server7001" />
+        <module name="config-client3366" />
+        <module name="zookeeper-order80" />
+        <module name="consul_order" />
+        <module name="Eureka_feign_Hystrix_order80" />
+        <module name="provider-order80" />
+        <module name="cloud_config_center3344" />
+        <module name="cloudalibaba-sentinel-service8401" />
+        <module name="consul_order80" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-alibaba-config-nacos-client3377" target="1.8" />
+      <module name="cloud-alibaba-consumer-nacos-order83" target="1.8" />
+      <module name="cloudalibabaconfignacosclient3377" target="1.8" />
+      <module name="cluod-alibaba-order83" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

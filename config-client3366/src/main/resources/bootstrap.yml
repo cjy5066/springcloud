@@ -1,0 +1,36 @@
+server:
+  port: 3366
+
+spring:
+  application:
+    name: config-client3366
+
+  cloud:
+    #config 客户端配置
+    config:
+      label: master   # 分支名称
+      name: config  #文件前缀名称
+      profile: div  #文件后缀名称     综上所述就是 master分支上config-div 文件
+      uri: http://localhost:3344  #配置中心地址
+
+#rabbitmp的相关配置，15672是web管理界面的入口。5672是Mq的访问的端口
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+eureka:
+  instance:
+    hostname: config-client
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+# 暴露监控端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

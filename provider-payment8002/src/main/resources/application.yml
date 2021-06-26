@@ -1,0 +1,33 @@
+server:
+  port: 8002
+
+# 名字
+spring:
+  application:
+    name: provider-payment-service
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/Springcloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 5066
+
+
+eureka:
+  client:
+    ###是否将自己注册到注册中心  false 表示不想注册中心注册自己
+    register-with-eureka: true
+    ###是否从euerka中获取注册信息
+    fetch-registry: true
+    # 配置暴露给eureka client的请求路径
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/      #  单机版
+      #defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka # 集群版
+  instance:
+    instance-id: payment-service8002  #修改主机名称，不以本机名称显示（联想电脑名）
+    prefer-ip-address: true   # 使用IP地址注册
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.cjy.common.entity
