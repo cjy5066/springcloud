@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class FlowLimitController {
     @GetMapping("/testA")
+    @SentinelResource(value = "testA")
     public String testA() {
         return "------testA";
     }
