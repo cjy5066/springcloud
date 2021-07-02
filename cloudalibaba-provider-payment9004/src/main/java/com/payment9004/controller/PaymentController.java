@@ -17,6 +17,8 @@ public class PaymentController {
 
     //定义一个map集合
     public static HashMap<Long, Payment> hashMap = new HashMap<>();
+
+    //静态代码块，模拟数据库的信息，不想写server类
     static{
         hashMap.put(1L,new Payment(1L,"28a8c1e3bc2742d8848569891fb42181"));
         hashMap.put(2L,new Payment(2L,"bba8c1e3bc2742d8848569891ac32182"));
