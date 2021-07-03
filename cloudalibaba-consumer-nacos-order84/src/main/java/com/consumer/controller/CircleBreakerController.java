@@ -4,11 +4,15 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.cjy.common.entity.CommonResult;
 import com.cjy.common.entity.Payment;
+import com.consumer.server.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import javax.annotation.Resource;
 
 @RestController
 public class CircleBreakerController {
@@ -24,7 +28,7 @@ public class CircleBreakerController {
     //@SentinelResource(value = "fallback",fallback = "handlerFallback") //fallback只负责业务异常 (代码运行异常)
     //@SentinelResource(value = "fallback",blockHandler = "blockHandler") //blockHandler只负责sentinel控制台配置违规
     @SentinelResource(value = "fallback",fallback = "handlerFallback",blockHandler = "blockHandler",
-            exceptionsToIgnore = {IllegalArgumentException.class})
+            exceptionsToIgnore = {IllegalArgumentException.class})      // exceptionsToIgnore 代码运行有指定的运行异常时，就不执行fallback的兜底方法了
     public CommonResult<Payment> fallback(@PathVariable Long id) {
         CommonResult<Payment> result = restTemplate.getForObject(SERVICE_URL + "/paymentSQL/"+id, CommonResult.class,id);
 
@@ -50,5 +54,19 @@ public class CircleBreakerController {
         return new CommonResult<>(445,"blockHandler-sentinel限流,无此流水: blockException  "+blockException.getMessage(),payment);
     }
 
+
+
+
+    //=========================================================================
+    //=========================================================================
+
+    // OpenFeign
+    @Resource
+    private PaymentService paymentService;
+
+    @GetMapping(value = "/consumer/paymentSQL/{id}")
+    public CommonResult<Payment> paymentSQL(@PathVariable("id") Long id) {
+        return paymentService.paymentSQL(id);
+    }
 
 }

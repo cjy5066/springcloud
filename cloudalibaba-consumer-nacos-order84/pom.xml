@@ -12,18 +12,25 @@
     <artifactId>cloudalibaba-consumer-nacos-order84</artifactId>
 
     <dependencies>
+        <!--openfeign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
+        <!--nacos 注册中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
+        <!-- sentinel-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+
         </dependency>
+
         <!--工程重构-->
         <!-- 实体类用cloud-api-commons中的，-->
         <dependency>

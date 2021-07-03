@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients     //启动fenign
 public class NacosOrderRun84 {
     public static void main(String[] args) {
         SpringApplication.run(NacosOrderRun84.class,args);
