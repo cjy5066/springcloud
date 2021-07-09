@@ -8,6 +8,7 @@ spring:
     alibaba:
       seata:
         tx-service-group: my_test_tx_group
+
     nacos:
       discovery:
         server-addr: localhost:8848
@@ -20,7 +21,9 @@ spring:
 feign:
   hystrix:
     enabled: false
-
+ribbon:
+  eureka:
+    enabled: true
 logging:
   level:
     io:

@@ -36,6 +36,8 @@ public class OrderServiceIMpl implements OrderService {
     @Override
     //name 随便写（全局唯一，不重复），rollbackfor 发送任何异就回滚
     @GlobalTransactional(name = "fsp-create-order",rollbackFor = Exception.class)
+//    @GlobalTransactional
+//    @Transactional(rollbackFor = Exception.class)
     public void create(Order order){
         log.info("----->开始新建订单");
         //新建订单

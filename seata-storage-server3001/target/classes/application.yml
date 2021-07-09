@@ -8,6 +8,7 @@ spring:
     alibaba:
       seata:
         tx-service-group: my_test_tx_group
+
     nacos:
       discovery:
         server-addr: localhost:8848
@@ -21,7 +22,9 @@ logging:
   level:
     io:
       seata: info
-
+ribbon:
+  eureka:
+    enabled: true
 mybatis:
   mapperLocations: classpath:mapper/*.xml
 
