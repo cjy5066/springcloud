@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16518a26-da2f-4d35-bd9f-362adcb8aca3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/seata-account-server4001.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/java/com/accountserver/AccountServerRun4001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/java/com/accountserver/controller/AccountCotroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/java/com/accountserver/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/java/com/accountserver/domian/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/java/com/accountserver/domian/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/java/com/accountserver/service/AccounService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/java/com/accountserver/service/impl/AccounServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/resources/mapper/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-account-server4001/账户4001.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-server2001.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/SeataOrderRun2001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/domian/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/domian/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seata_order/service/impl/OrderServiceIMpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/订单服务，创建订单.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/seata-storage-server3001.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/java/com/storageserver/StorageServerRun3001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/java/com/storageserver/controller/StorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/java/com/storageserver/dao/StorageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/java/com/storageserver/domain/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/java/com/storageserver/domain/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/java/com/storageserver/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/java/com/storageserver/service/impl/StorageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/resources/mapper/StorageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seata-storage-server3001/库存微服务.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\IntelliJ IDEA 2020.2.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1uysLf4R9J4KZI0bKPJ1CvA4etZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16518a26-da2f-4d35-bd9f-362adcb8aca3" name="Default Changelist" comment="" />
+      <created>1625649109565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625649109565</updated>
+      <workItem from="1625649110848" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="270" y="56" key="SettingsEditor" timestamp="1625649127973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1625649127973" />
+  </component>
+</project>
