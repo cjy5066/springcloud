@@ -35,7 +35,7 @@ public class OrderServiceIMpl implements OrderService {
 
     @Override
     //name 随便写（全局唯一，不重复），rollbackfor 发送任何异就回滚
-    @GlobalTransactional(name = "fsp-create-order",rollbackFor = Exception.class)
+    @GlobalTransactional(name="lsp-name",rollbackFor = Exception.class)
 //    @GlobalTransactional
 //    @Transactional(rollbackFor = Exception.class)
     public void create(Order order){
@@ -56,7 +56,7 @@ public class OrderServiceIMpl implements OrderService {
         accountService.decrease(order.getUserId(),order.getMoney());
         log.info("----->订单微服务开始调用账户，做扣减结束");
 
-
+        int i=1/0;
         //修改订单状态
         orderDao.update(order.getUserId(),0);
 

@@ -7,23 +7,25 @@ spring:
   cloud:
     alibaba:
       seata:
-        tx-service-group: my_test_tx_group
+        tx-service-group: my_test_tx_group    # 配置 seata的事务分组
 
     nacos:
       discovery:
         server-addr: localhost:8848
+        username: nacos
+        password: nacos
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/seata_account
     username: root
     password: 5066
 
+
+
 feign:
   hystrix:
     enabled: false
-ribbon:
-  eureka:
-    enabled: true
+
 logging:
   level:
     io:

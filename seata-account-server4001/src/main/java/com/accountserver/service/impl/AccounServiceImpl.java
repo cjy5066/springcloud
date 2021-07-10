@@ -30,11 +30,12 @@ public class AccounServiceImpl implements AccounService {
     public void decrease(Long userId, BigDecimal money) {
         LOGGER.info("------->account-service中扣减账户余额开始");
 
-        try{
-            Thread.sleep(20000);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+//        try{
+//            Thread.sleep(20000);
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+
         accountDao.decrease(userId,money);
         LOGGER.info("------->account-service中扣减账户余额结束");
     }
