@@ -25,7 +25,7 @@ public class MyLogGateWayFilter implements GlobalFilter, Ordered {
         /*
                 上面的代码类似于：
                 String name = HttpServletRequest.getParameter("name");
-                在访问的时候，必须带上username这个参数
+                这段代码的意思就是：在访问的时候，必须带上username这个参数，没有就拦截
                 像这样：http://localhost:9527/payment/find/1?username=ssfafe
          */
         if(username.equals("") || username==null){
