@@ -8,7 +8,7 @@ import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
 
 @Component
-//定义消息推送的管道
+//定义消息接收的管道
 @EnableBinding(Sink.class)
 public class Messagelnput {
 
